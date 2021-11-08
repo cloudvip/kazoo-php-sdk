@@ -460,7 +460,7 @@ abstract class AbstractEntity extends AbstractResource
     }
 
     public function write($object, $append_uri = null) {
-        $obj = new \\stdClass();
+        $obj = new \stdClass();
         $obj->data = $object;
         $payload = json_encode($obj);
 
